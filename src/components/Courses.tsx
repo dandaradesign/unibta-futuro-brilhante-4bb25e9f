@@ -27,8 +27,8 @@ export const Courses = () => {
     <section className="py-16 bg-white relative">
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-          alt="Pessoa usando laptop em ambiente de estudo" 
+          src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Estudantes diversos trabalhando em grupo com laptops" 
           className="w-full h-full object-cover opacity-5"
         />
       </div>
@@ -40,6 +40,14 @@ export const Courses = () => {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Escolha entre nossos cursos presenciais e EAD, todos com foco no mercado de trabalho
           </p>
+          
+          <div className="flex justify-center mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              alt="Jovens estudantes diversos em sala de aula moderna" 
+              className="w-full max-w-2xl h-64 object-cover rounded-xl shadow-lg"
+            />
+          </div>
           
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {categories.map((category) => (

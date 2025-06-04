@@ -33,9 +33,9 @@ export const Statistics = () => {
     <section className="py-16 bg-unibta-light-gray relative">
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-          alt="Grupo de estudantes colaborando" 
-          className="w-full h-full object-cover opacity-5"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Grupo de jovens estudantes celebrando formatura" 
+          className="w-full h-full object-cover opacity-10"
         />
       </div>
       <div className="container mx-auto px-4 relative z-10">
@@ -65,6 +65,33 @@ export const Statistics = () => {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Jovem estudante masculino sorrindo" 
+              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-lg"
+            />
+            <p className="text-gray-600 italic">"A UniBTA transformou minha carreira"</p>
+          </div>
+          <div className="text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Jovem estudante feminina sorrindo" 
+              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-lg"
+            />
+            <p className="text-gray-600 italic">"Professores incríveis e ensino de qualidade"</p>
+          </div>
+          <div className="text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Jovem estudante sorrindo" 
+              className="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-lg"
+            />
+            <p className="text-gray-600 italic">"Flexibilidade que eu precisava"</p>
+          </div>
         </div>
       </div>
     </section>

@@ -36,15 +36,45 @@ export const AdmissionMethods = () => {
   ];
 
   return (
-    <section className="py-16 bg-unibta-light-gray">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-unibta-light-gray relative">
+      <div className="absolute inset-0">
+        <img 
+          src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Jovens estudantes diversos usando computadores" 
+          className="w-full h-full object-cover opacity-10"
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-unibta-blue mb-4">
             Múltiplas Formas de Ingresso
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
             Escolha a forma de ingresso que melhor se adapta ao seu perfil
           </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+            <img 
+              src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Jovem estudante concentrada" 
+              className="w-full h-32 object-cover rounded-lg shadow-md"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Estudante masculino sorrindo" 
+              className="w-full h-32 object-cover rounded-lg shadow-md"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Jovem estudante feminina" 
+              className="w-full h-32 object-cover rounded-lg shadow-md"
+            />
+            <img 
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Estudante concentrado estudando" 
+              className="w-full h-32 object-cover rounded-lg shadow-md"
+            />
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
