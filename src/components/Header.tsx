@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-bold text-xl">
+            <div className="bg-unibta-blue text-white px-4 py-2 rounded-lg font-bold text-xl">
               UniBTA
             </div>
           </div>
@@ -24,7 +24,7 @@ export const Header = () => {
                 <span>contato@unibta.edu.br</span>
               </div>
             </div>
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+            <Button className="bg-unibta-yellow hover:bg-yellow-600 text-unibta-blue font-semibold">
               Inscreva-se Agora
             </Button>
           </div>

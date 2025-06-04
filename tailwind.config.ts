@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// UniBTA Brand Colors
+				unibta: {
+					blue: '#002F6C',
+					yellow: '#FFD700',
+					'light-gray': '#F5F5F5',
+					white: '#FFFFFF'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				sans: ['Arial', 'Helvetica', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {

@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Monitor, Users, Scale, Calculator, Heart, Truck, GraduationCap, Network, Globe, Brain, Briefcase, Database } from "lucide-react";
+import { BookOpen, Monitor, Users, Scale, Calculator, Heart, Truck, GraduationCap, Network, Globe, Brain, Briefcase, Database, TrendingUp } from "lucide-react";
 
 export const Courses = () => {
   const courses = [
@@ -24,10 +24,17 @@ export const Courses = () => {
   const categories = ["Todos", "Gestão", "Tecnologia", "Educação", "Saúde", "Jurídico"];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-white relative">
+      <div className="absolute inset-0">
+        <img 
+          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Pessoa usando laptop em ambiente de estudo" 
+          className="w-full h-full object-cover opacity-5"
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-unibta-blue mb-4">
             Cursos que Transformam Carreiras
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
@@ -39,7 +46,9 @@ export const Courses = () => {
               <Badge 
                 key={category} 
                 variant={category === "Todos" ? "default" : "secondary"}
-                className="px-4 py-2 cursor-pointer hover:bg-blue-100 transition-colors"
+                className={`px-4 py-2 cursor-pointer hover:bg-unibta-yellow hover:text-unibta-blue transition-colors ${
+                  category === "Todos" ? "bg-unibta-blue text-white" : "bg-gray-200 text-gray-700"
+                }`}
               >
                 {category}
               </Badge>
@@ -49,25 +58,25 @@ export const Courses = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 shadow-md">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 shadow-md bg-white">
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-2">
-                  <div className="bg-gradient-to-br from-blue-100 to-purple-100 w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <course.icon className="w-6 h-6 text-blue-600" />
+                  <div className="bg-unibta-yellow w-12 h-12 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <course.icon className="w-6 h-6 text-unibta-blue" />
                   </div>
-                  <Badge variant="outline" className="text-xs">
+                  <Badge variant="outline" className="text-xs border-unibta-blue text-unibta-blue">
                     {course.duration}
                   </Badge>
                 </div>
-                <CardTitle className="text-lg leading-tight">{course.name}</CardTitle>
-                <Badge variant="secondary" className="w-fit text-xs">
+                <CardTitle className="text-lg leading-tight text-gray-900">{course.name}</CardTitle>
+                <Badge variant="secondary" className="w-fit text-xs bg-unibta-light-gray text-gray-700">
                   {course.category}
                 </Badge>
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="flex gap-2">
-                  <Badge variant="outline" className="text-xs">Presencial</Badge>
-                  <Badge variant="outline" className="text-xs">EAD</Badge>
+                  <Badge variant="outline" className="text-xs border-unibta-blue text-unibta-blue">Presencial</Badge>
+                  <Badge variant="outline" className="text-xs border-unibta-blue text-unibta-blue">EAD</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -77,7 +86,7 @@ export const Courses = () => {
         <div className="text-center mt-12">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+            className="bg-unibta-yellow hover:bg-yellow-600 text-unibta-blue font-semibold"
           >
             Ver Todos os Cursos
           </Button>
@@ -86,6 +95,3 @@ export const Courses = () => {
     </section>
   );
 };
-
-// Import TrendingUp from lucide-react at the top
-import { TrendingUp } from "lucide-react";

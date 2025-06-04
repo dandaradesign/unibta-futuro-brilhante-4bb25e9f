@@ -36,10 +36,10 @@ export const AdmissionMethods = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-unibta-light-gray">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-unibta-blue mb-4">
             Múltiplas Formas de Ingresso
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -51,17 +51,17 @@ export const AdmissionMethods = () => {
           {methods.map((method, index) => (
             <Card 
               key={index} 
-              className={`group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${
-                method.highlight ? 'ring-2 ring-blue-500 bg-gradient-to-br from-blue-50 to-purple-50' : ''
+              className={`group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white ${
+                method.highlight ? 'ring-2 ring-unibta-yellow shadow-lg' : ''
               }`}
             >
               <CardHeader className="text-center pb-4">
                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 ${
-                  method.highlight ? 'bg-gradient-to-br from-blue-600 to-purple-600' : 'bg-gradient-to-br from-gray-100 to-gray-200'
+                  method.highlight ? 'bg-unibta-yellow' : 'bg-unibta-light-gray'
                 }`}>
-                  <method.icon className={`w-8 h-8 ${method.highlight ? 'text-white' : 'text-gray-600'}`} />
+                  <method.icon className={`w-8 h-8 ${method.highlight ? 'text-unibta-blue' : 'text-gray-600'}`} />
                 </div>
-                <CardTitle className="text-lg">{method.title}</CardTitle>
+                <CardTitle className="text-lg text-unibta-blue">{method.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-gray-600 mb-4 text-sm">
@@ -70,7 +70,7 @@ export const AdmissionMethods = () => {
                 <ul className="space-y-2 mb-6">
                   {method.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center justify-center space-x-2 text-sm">
-                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -78,7 +78,7 @@ export const AdmissionMethods = () => {
                 <Button 
                   variant={method.highlight ? "default" : "outline"} 
                   size="sm" 
-                  className={method.highlight ? "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 w-full" : "w-full"}
+                  className={method.highlight ? "bg-unibta-yellow hover:bg-yellow-600 text-unibta-blue w-full font-semibold" : "w-full border-unibta-blue text-unibta-blue hover:bg-unibta-blue hover:text-white"}
                 >
                   Saiba Mais
                 </Button>

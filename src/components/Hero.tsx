@@ -4,41 +4,48 @@ import { CheckCircle, MapPin, Star } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative py-20 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 opacity-10"></div>
+    <section className="relative py-20 lg:py-32 overflow-hidden bg-white">
+      <div className="absolute inset-0">
+        <img 
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Estudantes universitários colaborando" 
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-unibta-blue opacity-5"></div>
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
-            <div className="flex items-center space-x-1 bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium">
+            <div className="flex items-center space-x-1 bg-unibta-yellow text-unibta-blue px-4 py-2 rounded-full text-sm font-semibold">
               <Star className="w-4 h-4 fill-current" />
               <span>Vestibular 2025/2 Aberto</span>
             </div>
           </div>
           
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Seu futuro começa aqui:
-            </span>
+          <h1 className="text-4xl lg:text-6xl font-bold text-unibta-blue mb-6 leading-tight">
+            Seu futuro começa aqui:
             <br />
-            Graduação com qualidade e flexibilidade
+            <span className="text-unibta-blue">
+              Graduação com qualidade e flexibilidade
+            </span>
           </h1>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
             Cursos presenciais e EAD em São Paulo com professores qualificados e foco no mercado de trabalho
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-4 h-auto"
+              className="bg-unibta-yellow hover:bg-yellow-600 text-unibta-blue text-lg px-8 py-4 h-auto font-semibold"
             >
               Inscreva-se Agora - Gratuito
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 text-lg px-8 py-4 h-auto"
+              className="border-2 border-unibta-blue text-unibta-blue hover:bg-unibta-blue hover:text-white text-lg px-8 py-4 h-auto font-semibold"
             >
               Conheça os Cursos
             </Button>
@@ -46,15 +53,15 @@ export const Hero = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-green-500" />
+              <CheckCircle className="w-5 h-5 text-green-600" />
               <span>Inscrição 100% online</span>
             </div>
             <div className="flex items-center space-x-2">
-              <CheckCircle className="w-5 h-5 text-green-500" />
+              <CheckCircle className="w-5 h-5 text-green-600" />
               <span>Resultado imediato</span>
             </div>
             <div className="flex items-center space-x-2">
-              <MapPin className="w-5 h-5 text-blue-500" />
+              <MapPin className="w-5 h-5 text-unibta-blue" />
               <span>R. da Consolação, 847 - SP</span>
             </div>
           </div>

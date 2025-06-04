@@ -26,10 +26,17 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-white relative">
+      <div className="absolute inset-0">
+        <img 
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+          alt="Mulher estudando com laptop" 
+          className="w-full h-full object-cover opacity-5"
+        />
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-unibta-blue mb-4">
             O que nossos alunos dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -42,12 +49,12 @@ export const Testimonials = () => {
             <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
               <CardContent className="p-6">
                 <div className="absolute top-4 right-4 opacity-20">
-                  <Quote className="w-8 h-8 text-blue-600" />
+                  <Quote className="w-8 h-8 text-unibta-blue" />
                 </div>
                 
                 <div className="flex items-center space-x-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-4 h-4 fill-unibta-yellow text-unibta-yellow" />
                   ))}
                 </div>
                 
@@ -56,13 +63,13 @@ export const Testimonials = () => {
                 </p>
                 
                 <div className="flex items-center space-x-3">
-                  <Avatar className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500">
+                  <Avatar className="w-12 h-12 bg-unibta-blue">
                     <AvatarFallback className="text-white font-semibold">
                       {testimonial.name.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
+                    <div className="font-semibold text-unibta-blue">{testimonial.name}</div>
                     <div className="text-sm text-gray-500">{testimonial.course}</div>
                   </div>
                 </div>
