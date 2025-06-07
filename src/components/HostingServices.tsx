@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { 
   Server, 
   Cloud, 
-  Wordpress, 
+  Code2, 
   ShoppingCart, 
   Globe, 
   Database, 
@@ -32,7 +32,7 @@ export const HostingServices = () => {
     },
     { 
       name: "WordPress Otimizado", 
-      icon: Wordpress, 
+      icon: Code2, 
       category: "Popular", 
       price: "R$ 19,90/mês",
       color: "from-indigo-500 to-indigo-700",
