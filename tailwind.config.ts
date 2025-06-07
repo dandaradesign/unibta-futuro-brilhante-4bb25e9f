@@ -63,12 +63,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// UniBTA Brand Colors
-				unibta: {
-					blue: '#002F6C',
-					yellow: '#FFD700',
-					'light-gray': '#F5F5F5',
-					white: '#FFFFFF'
+				// Nuvem Host Brand Colors
+				nuvemhost: {
+					orange: '#FF6B35',
+					'orange-light': '#FF8C69',
+					'orange-dark': '#E55A2B',
+					blue: '#1E40AF',
+					'blue-dark': '#1E3A8A',
+					gray: '#334155',
+					'gray-light': '#64748B',
+					white: '#FFFFFF',
+					tech: '#6366F1'
 				}
 			},
 			borderRadius: {
@@ -77,7 +82,7 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Arial', 'Helvetica', 'sans-serif'],
+				sans: ['Inter', 'Arial', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -95,11 +100,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite'
 			}
 		}
 	},

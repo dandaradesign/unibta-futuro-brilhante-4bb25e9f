@@ -1,48 +1,48 @@
 
-import { Users, Award, Clock, TrendingUp, BookOpen, Globe } from "lucide-react";
+import { Users, Award, Clock, TrendingUp, Server, Globe, Shield, Zap } from "lucide-react";
 
 export const Statistics = () => {
   const stats = [
     {
       icon: Clock,
-      number: "20+",
-      label: "Anos de História",
-      description: "Experiência sólida em educação superior",
-      gradient: "from-blue-500 to-blue-700"
-    },
-    {
-      icon: Users,
-      number: "10mil+",
-      label: "Alunos Formados",
-      description: "Profissionais atuando no mercado",
+      number: "99.9%",
+      label: "Uptime Garantido",
+      description: "Disponibilidade comprovada dos servidores",
       gradient: "from-green-500 to-green-700"
     },
     {
-      icon: Award,
-      number: "93%",
-      label: "Mestres e Doutores",
-      description: "Corpo docente altamente qualificado",
+      icon: Users,
+      number: "50mil+",
+      label: "Sites Hospedados",
+      description: "Clientes confiando na nossa infraestrutura",
+      gradient: "from-blue-500 to-blue-700"
+    },
+    {
+      icon: Server,
+      number: "15+",
+      label: "Data Centers",
+      description: "Infraestrutura global de alta performance",
       gradient: "from-purple-500 to-purple-700"
     },
     {
-      icon: TrendingUp,
-      number: "95%",
-      label: "Empregabilidade",
-      description: "Taxa de inserção no mercado",
+      icon: Zap,
+      number: "< 200ms",
+      label: "Tempo de Resposta",
+      description: "Performance otimizada para seus visitantes",
       gradient: "from-orange-500 to-orange-700"
     },
     {
-      icon: BookOpen,
-      number: "25+",
-      label: "Cursos Oferecidos",
-      description: "Graduação presencial e EAD",
-      gradient: "from-pink-500 to-pink-700"
+      icon: Shield,
+      number: "24/7",
+      label: "Monitoramento",
+      description: "Segurança e suporte contínuo",
+      gradient: "from-red-500 to-red-700"
     },
     {
       icon: Globe,
       number: "100%",
-      label: "Reconhecidos MEC",
-      description: "Qualidade certificada",
+      label: "CDN Global",
+      description: "Entrega de conteúdo otimizada mundialmente",
       gradient: "from-teal-500 to-teal-700"
     }
   ];
@@ -53,7 +53,7 @@ export const Statistics = () => {
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, #002F6C 2px, transparent 2px), radial-gradient(circle at 75% 75%, #FFD700 2px, transparent 2px)`,
+            backgroundImage: `radial-gradient(circle at 25% 25%, #FF6B35 2px, transparent 2px), radial-gradient(circle at 75% 75%, #1E40AF 2px, transparent 2px)`,
             backgroundSize: '60px 60px'
           }}></div>
         </div>
@@ -62,17 +62,17 @@ export const Statistics = () => {
           {/* Header */}
           <div className="text-center mb-20">
             <div className="inline-block mb-6">
-              <span className="bg-gradient-to-r from-unibta-yellow to-yellow-400 text-unibta-blue px-6 py-2 rounded-full text-sm font-bold">
-                Por que escolher a UniBTA?
+              <span className="bg-gradient-to-r from-nuvemhost-orange to-orange-400 text-white px-6 py-2 rounded-full text-sm font-bold">
+                Por que escolher a Nuvem Host?
               </span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-unibta-blue via-blue-600 to-unibta-blue bg-clip-text text-transparent mb-8">
-              Números que
+            <h2 className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-nuvemhost-blue via-blue-600 to-nuvemhost-blue bg-clip-text text-transparent mb-8">
+              Performance que
               <br />
-              <span className="text-unibta-yellow">impressionam</span>
+              <span className="text-nuvemhost-orange">impressiona</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Mais de duas décadas transformando vidas através da educação de excelência
+              Infraestrutura robusta e tecnologia de ponta para garantir o melhor desempenho do seu site
             </p>
           </div>
           
@@ -91,7 +91,7 @@ export const Statistics = () => {
                   
                   {/* Number */}
                   <div className="text-center mb-6">
-                    <div className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-unibta-blue to-blue-700 bg-clip-text text-transparent mb-2">
+                    <div className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-nuvemhost-blue to-blue-700 bg-clip-text text-transparent mb-2">
                       {stat.number}
                     </div>
                     <div className="text-xl font-bold text-gray-800 mb-2">
@@ -107,7 +107,7 @@ export const Statistics = () => {
                     <div 
                       className={`bg-gradient-to-r ${stat.gradient} h-2 rounded-full transition-all duration-1000 delay-300 group-hover:animate-pulse`}
                       style={{ 
-                        width: `${Math.min(parseInt(stat.number.replace(/\D/g, '') || '0'), 100)}%`,
+                        width: '100%',
                         animation: 'slideIn 2s ease-out forwards'
                       }}
                     ></div>
@@ -123,18 +123,18 @@ export const Statistics = () => {
               {/* Left Images */}
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                  "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                  "https://images.unsplash.com/photo-1551703599-6b3e8379aa8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                  "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 ].map((src, index) => (
                   <div key={index} className={`relative overflow-hidden rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500 ${index % 2 === 1 ? 'mt-8' : ''}`}>
                     <img 
                       src={src}
-                      alt={`Estudante ${index + 1}`}
+                      alt={`Infraestrutura ${index + 1}`}
                       className="w-full h-48 object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-unibta-blue/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-nuvemhost-blue/20 to-transparent"></div>
                   </div>
                 ))}
               </div>
@@ -142,23 +142,23 @@ export const Statistics = () => {
               {/* Right Content */}
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-4xl font-black text-unibta-blue mb-6">
-                    Uma comunidade que
-                    <span className="text-unibta-yellow"> cresce junto</span>
+                  <h3 className="text-4xl font-black text-nuvemhost-blue mb-6">
+                    Tecnologia que
+                    <span className="text-nuvemhost-orange"> move o futuro</span>
                   </h3>
                   <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                    Mais que uma instituição de ensino, somos uma família que acredita no potencial de cada estudante. 
-                    Nossos números refletem o compromisso com a excelência e o sucesso de nossos alunos.
+                    Nossa infraestrutura utiliza o que há de mais moderno em tecnologia de cloud computing, 
+                    garantindo performance excepcional e confiabilidade total para seus projetos digitais.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-6">
                   {[
-                    { number: "4.8★", label: "Avaliação Geral" },
+                    { number: "5★", label: "Avaliação Média" },
                     { number: "98%", label: "Satisfação" }
                   ].map((item, index) => (
-                    <div key={index} className="text-center p-6 bg-gradient-to-br from-unibta-yellow/10 to-transparent rounded-2xl border border-unibta-yellow/20">
-                      <div className="text-3xl font-bold text-unibta-blue mb-2">{item.number}</div>
+                    <div key={index} className="text-center p-6 bg-gradient-to-br from-nuvemhost-orange/10 to-transparent rounded-2xl border border-nuvemhost-orange/20">
+                      <div className="text-3xl font-bold text-nuvemhost-blue mb-2">{item.number}</div>
                       <div className="text-sm text-gray-600">{item.label}</div>
                     </div>
                   ))}
@@ -172,7 +172,7 @@ export const Statistics = () => {
       <style>{`
         @keyframes slideIn {
           from { width: 0%; }
-          to { width: var(--final-width); }
+          to { width: 100%; }
         }
       `}</style>
     </>

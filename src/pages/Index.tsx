@@ -6,7 +6,7 @@ import { CheckCircle, MapPin, Users, Award, BookOpen, Clock, Smartphone, Monitor
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Statistics } from "@/components/Statistics";
-import { Courses } from "@/components/Courses";
+import { HostingServices } from "@/components/HostingServices";
 import { Campus } from "@/components/Campus";
 import { AdmissionMethods } from "@/components/AdmissionMethods";
 import { Testimonials } from "@/components/Testimonials";
@@ -20,7 +20,7 @@ const Index = () => {
       <Header />
       <Hero />
       <Statistics />
-      <Courses />
+      <HostingServices />
       <Campus />
       <AdmissionMethods />
       <Testimonials />
