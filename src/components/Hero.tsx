@@ -4,7 +4,7 @@ import { CheckCircle, Star, ArrowRight, Play, Shield, Users, Server, Zap, Cloud 
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-nuvemhost-blue to-blue-900">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-nuvemhost-purple to-purple-900">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,107,53,0.1),transparent_50%)]"></div>
@@ -81,7 +81,7 @@ export const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="group border-2 border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-nuvemhost-blue text-lg px-8 py-6 h-auto font-bold transition-all duration-500 hover:scale-105"
+                className="group border-2 border-white/30 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-nuvemhost-purple text-lg px-8 py-6 h-auto font-bold transition-all duration-500 hover:scale-105"
               >
                 <Play className="w-5 h-5 mr-2" />
                 Ver Demonstração
@@ -116,7 +116,7 @@ export const Hero = () => {
                   alt="Centro de dados moderno" 
                   className="w-full h-[600px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-nuvemhost-blue/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-nuvemhost-purple/30 to-transparent"></div>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ export const Hero = () => {
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <div>
-                  <div className="text-sm font-bold text-nuvemhost-blue">99.9% Online</div>
+                  <div className="text-sm font-bold text-nuvemhost-purple">99.9% Online</div>
                   <div className="text-xs text-gray-600">Servidores ativos</div>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export const Hero = () => {
 
             {/* Decorative Elements */}
             <div className="absolute top-1/2 -right-12 w-24 h-24 bg-gradient-to-r from-nuvemhost-orange to-orange-500 rounded-full opacity-20 animate-pulse"></div>
-            <div className="absolute -top-6 right-1/4 w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute -top-6 right-1/4 w-16 h-16 bg-gradient-to-r from-nuvemhost-purple-light to-purple-600 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
           </div>
         </div>
       </div>

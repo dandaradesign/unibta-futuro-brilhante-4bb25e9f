@@ -15,7 +15,7 @@ export const Statistics = () => {
       number: "50mil+",
       label: "Sites Hospedados",
       description: "Clientes confiando na nossa infraestrutura",
-      gradient: "from-blue-500 to-blue-700"
+      gradient: "from-nuvemhost-purple to-purple-700"
     },
     {
       icon: Server,
@@ -53,7 +53,7 @@ export const Statistics = () => {
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 25% 25%, #FF6B35 2px, transparent 2px), radial-gradient(circle at 75% 75%, #1E40AF 2px, transparent 2px)`,
+            backgroundImage: `radial-gradient(circle at 25% 25%, #FF6B35 2px, transparent 2px), radial-gradient(circle at 75% 75%, #7C3AED 2px, transparent 2px)`,
             backgroundSize: '60px 60px'
           }}></div>
         </div>
@@ -66,7 +66,7 @@ export const Statistics = () => {
                 Por que escolher a Nuvem Host?
               </span>
             </div>
-            <h2 className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-nuvemhost-blue via-blue-600 to-nuvemhost-blue bg-clip-text text-transparent mb-8">
+            <h2 className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-nuvemhost-purple via-purple-600 to-nuvemhost-purple bg-clip-text text-transparent mb-8">
               Performance que
               <br />
               <span className="text-nuvemhost-orange">impressiona</span>
@@ -91,7 +91,7 @@ export const Statistics = () => {
                   
                   {/* Number */}
                   <div className="text-center mb-6">
-                    <div className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-nuvemhost-blue to-blue-700 bg-clip-text text-transparent mb-2">
+                    <div className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-nuvemhost-purple to-purple-700 bg-clip-text text-transparent mb-2">
                       {stat.number}
                     </div>
                     <div className="text-xl font-bold text-gray-800 mb-2">
@@ -124,7 +124,7 @@ export const Statistics = () => {
               <div className="grid grid-cols-2 gap-6">
                 {[
                   "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-                  "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                  "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                   "https://images.unsplash.com/photo-1551703599-6b3e8379aa8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                   "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 ].map((src, index) => (
@@ -134,7 +134,7 @@ export const Statistics = () => {
                       alt={`Infraestrutura ${index + 1}`}
                       className="w-full h-48 object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-nuvemhost-blue/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-nuvemhost-purple/20 to-transparent"></div>
                   </div>
                 ))}
               </div>
@@ -142,7 +142,7 @@ export const Statistics = () => {
               {/* Right Content */}
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-4xl font-black text-nuvemhost-blue mb-6">
+                  <h3 className="text-4xl font-black text-nuvemhost-purple mb-6">
                     Tecnologia que
                     <span className="text-nuvemhost-orange"> move o futuro</span>
                   </h3>
@@ -158,7 +158,7 @@ export const Statistics = () => {
                     { number: "98%", label: "Satisfação" }
                   ].map((item, index) => (
                     <div key={index} className="text-center p-6 bg-gradient-to-br from-nuvemhost-orange/10 to-transparent rounded-2xl border border-nuvemhost-orange/20">
-                      <div className="text-3xl font-bold text-nuvemhost-blue mb-2">{item.number}</div>
+                      <div className="text-3xl font-bold text-nuvemhost-purple mb-2">{item.number}</div>
                       <div className="text-sm text-gray-600">{item.label}</div>
                     </div>
                   ))}
